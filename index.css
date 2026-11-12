@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body { margin: 0; background: #0b071e; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bounce-in { 0% { opacity: 0; transform: scale(.96); } 65% { opacity: 1; transform: scale(1.02); } 100% { transform: scale(1); } }
+.animate-fade-in { animation: fade-in .35s ease-out both; }
+.animate-bounce-in { animation: bounce-in .45s ease-out both; }
+.scale-102 { transform: scale(1.02); }
